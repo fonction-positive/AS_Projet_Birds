@@ -204,6 +204,40 @@ Good luck, and use this project to demonstrate the full breadth of statistical s
 
 在分析过程中，请始终将映射表（`ESPECES`, `GPS-MILIEU`）与观测数据结合使用，以便用物种和栖息地信息来丰富事实表。
 
+
+
+## 观测数据表列名解释：(NOM FRANCAIS)
+
+**基本信息列：**
+
+1. `Nom observateur` - 观察者姓名
+2. `code département` - 部门代码 (972 = 马提尼克)
+3. `Nom transect` - 样线名称
+4. `date` - 观测日期
+5. `1er, 2e ou 3e passage` - 第几次访问 (1/2/3)
+6. `nuages` - 云量等级
+7. `pluie` - 降雨等级
+8. `vent` - 风力等级
+9. `visibilité` - 能见度等级
+10. `N° point` - 观测点编号 (1-10)
+11. `heure début` - 开始时间
+12. `ESPECE` - 物种名称
+
+**距离带计数列 (按探测方式分类)：**
+
+- **< 25m**: `Auditif`, `Visuel` (听觉、视觉探测)
+- **<50m**: `Auditif`, `Visuel`
+- **<100m**: `Auditif`, `Visuel`
+- **> 100m**: `Auditif`, `Visuel`
+- **vol**: `Auditif`, `Visuel` (飞行中的鸟类)
+
+**汇总列：**
+
+- `totaux` - 总计数
+- 其他汇总列 (听觉总计、视觉总计、组合计数等)
+
+
+
 ## 观测数据收集方式
 1.  **样线即站点** – 每条样线对应一个监测站点。每个站点包含沿样线布置的 **10个固定观测点**。
 2.  **访问协议** – 进行调查时，观察者前往站点，从点1开始，记录鸟类 **5分钟**，然后步行至下一个点重复此过程，直到完成全部10个点。
